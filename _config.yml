@@ -20,12 +20,12 @@ defaults:
 # Build settings
 markdown: kramdown
 theme: minima
-# plugins:
-#   - jekyll-feed
 exclude:
+  - README.md
   - Gemfile
   - Gemfile.lock
   - vendor
+  - instants-magiques-bld
 
 sass:
   sass_dir: _sass
