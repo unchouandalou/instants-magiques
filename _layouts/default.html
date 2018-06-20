@@ -1,0 +1,68 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Instants magiques</title>
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700" rel="stylesheet">
+    <link href="{{ '/assets/css/instants-magiques.css' | relative_url }}" rel="stylesheet">
+</head>
+<body class="{{ page.slug }}">
+    <header>
+        <a href="{{ '/' | relative_url }}">
+            <h1>Instants Magiques</h1>
+        </a>
+
+        <nav>
+        {% assign pdfs = site.static_files | where: "pdf", true %}
+        {% for pdf in pdfs %}
+            <a href="{{ pdf.path }}">
+            {%- if pdf.name contains 'esthetique' -%}
+                Esthétique
+            {%- elsif pdf.name contains 'coiffure' -%}
+                Coiffure
+            {%- elsif pdf.name contains 'mariage' -%}
+                Mariage
+            {%- endif -%}
+            </a>
+        {% endfor %}
+        </nav>
+    </header>
+
+    <main>
+        {{ content }}
+    </main>
+
+    <footer>
+        <div>
+            <div class="copyright">
+                <p>
+                    © Instants Magiques 2018
+                </p>
+                <p>
+                    <a href="{{ 'mentions-legales.html' | relative_url }}">
+                        Mentions légales
+                    </a>
+                </p>
+            </div>
+            <div class="contact">
+                <h4>Contact</h4>
+                <p>
+                    10, promenade du Breuil<br>
+                    25110 Baume-les-Dames<br>
+                    Tél. : <a href="tel:+33381843641">03 81 84 36 41</a><br>
+                    Mél : <a href="mailto:{{ site.email }}">{{ site.email }}</a>
+                </p>
+            </div>
+            <div class="social">
+                <a href="https://www.facebook.com/instantsmagiquesbld/" target="_blank">
+                    <img src="{{ 'assets/images/facebook-logo.png' | relative_url }}" alt="Facebook • @instantsmagiquesbld">
+                </a>
+                <a href="https://www.instagram.com/instantsmagiques_bld/" target="_blank">
+                    <img src="{{ 'assets/images/instagram-logo.png' | relative_url }}" alt="Instagram • @instantsmagiques_bld">
+                </a>
+            </div>
+            <div style="clear: both"></div>
+        </div>
+    </footer>
+</body>
+</html>
