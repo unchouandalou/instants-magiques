@@ -26,6 +26,8 @@ exclude:
   - Gemfile.lock
   - vendor
   - instants-magiques-bld
+  - instants-magiques.sublime-project
+  - instants-magiques.sublime-workspace
 
 sass:
   sass_dir: _sass

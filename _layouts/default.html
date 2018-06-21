@@ -34,15 +34,13 @@
 
     <footer>
         <div>
-            <div class="copyright">
-                <p>
-                    © Instants Magiques 2018
-                </p>
-                <p>
-                    <a href="{{ 'mentions-legales.html' | relative_url }}">
-                        Mentions légales
-                    </a>
-                </p>
+            <div class="social">
+                <a href="https://www.facebook.com/instantsmagiquesbld/" target="_blank">
+                    <img src="{{ 'assets/images/facebook-logo.png' | relative_url }}" alt="Facebook • @instantsmagiquesbld">
+                </a>
+                <a href="https://www.instagram.com/instantsmagiques_bld/" target="_blank">
+                    <img src="{{ 'assets/images/instagram-logo.png' | relative_url }}" alt="Instagram • @instantsmagiques_bld">
+                </a>
             </div>
             <div class="contact">
                 <h4>Contact</h4>
@@ -53,16 +51,18 @@
                     Mél : <a href="mailto:{{ site.email }}">{{ site.email }}</a>
                 </p>
             </div>
-            <div class="social">
-                <a href="https://www.facebook.com/instantsmagiquesbld/" target="_blank">
-                    <img src="{{ 'assets/images/facebook-logo.png' | relative_url }}" alt="Facebook • @instantsmagiquesbld">
-                </a>
-                <a href="https://www.instagram.com/instantsmagiques_bld/" target="_blank">
-                    <img src="{{ 'assets/images/instagram-logo.png' | relative_url }}" alt="Instagram • @instantsmagiques_bld">
-                </a>
+            <div class="copyright">
+                <p>
+                    © Instants Magiques 2018
+                </p>
+                <p>
+                    <a href="{{ 'mentions-legales.html' | relative_url }}">
+                        Mentions légales
+                    </a>
+                </p>
             </div>
-            <div style="clear: both"></div>
         </div>
+        <div style="clear: both"></div>
     </footer>
 </body>
 </html>

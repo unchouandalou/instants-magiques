@@ -1,6 +1,2 @@
 url: "http://www.instants-magiques-bld.fr"
-destination:     ./instants-magiques-bld
-plugins:
-  - jekyll-autoprefixer
-  - jekyll-minifier
-  - jemoji
+destination: ./instants-magiques-bld
