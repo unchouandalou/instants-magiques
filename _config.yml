@@ -24,6 +24,10 @@ exclude:
   - README.md
   - Gemfile
   - Gemfile.lock
+  - Pipfile
+  - Pipfile.lock
+  - tasks.py
+  - feed.xml
   - vendor
   - instants-magiques-bld
   - instants-magiques.sublime-project
