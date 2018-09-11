@@ -4,3 +4,5 @@ _site
 .bundle
 vendor/
 instants-magiques-bld
+instants-magiques-bld.zip
+*.lock
